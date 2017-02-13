@@ -1,0 +1,11 @@
+# ignore tmp, plugin, help files, but keep tmp and plugin file structures.
+#
+# ignore tmp files
+tmpfiles/*
+
+# ignore plugin files
+dein/*
+bundle/*
+
+# ignore help files for me
+my_help/

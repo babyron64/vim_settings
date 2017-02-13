@@ -1,0 +1,28 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# file explorer
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]] # debug tool 
+repo='vim-scripts/gtags.vim'
+
+[[plugins]] # explicit indent
+repo='Yggdroot/indentLine'
+
+[[plugins]] # complementer
+repo='Shougo/neocomplete.vim'
+
+[[plugins]] # snippet
+repo='Shougo/neosnippet.vim'
+
+[[plugins]] # default snippet
+repo='Shougo/neosnippet-snippets'
+
+[[plugins]] # sequencial command executer
+repo = 'kana/vim-submode'
+
+[[plugins]] # commenter
+repo='scrooloose/nerdcommenter'
+
