@@ -9,3 +9,6 @@ bundle/*
 
 # ignore help files for me
 my_help/
+
+# enable empty directory to add
+!.gitkeep
