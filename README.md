@@ -1,6 +1,4 @@
 # vim_settings
-### My vim settings
-
 ## installation
 Execute install.sh and .vimrc file will be added to $HOME/.
 
