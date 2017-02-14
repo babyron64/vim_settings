@@ -1,8 +1,8 @@
-[[plugins]]
+[[plugins]] # plugin manager
 repo = 'Shougo/dein.vim'
 
-# file explorer
-[[plugins]]
+[[plugins]] # file explorer
+
 repo = 'scrooloose/nerdtree'
 
 [[plugins]] # debug tool 
