@@ -26,3 +26,5 @@ repo = 'kana/vim-submode'
 [[plugins]] # commenter
 repo='scrooloose/nerdcommenter'
 
+[[plugins]] # git wrapper
+repo = 'tpope/vim-fugitive'
