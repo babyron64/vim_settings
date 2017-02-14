@@ -6,25 +6,25 @@ repo = 'Shougo/dein.vim'
 repo = 'scrooloose/nerdtree'
 
 [[plugins]] # debug tool 
-repo='vim-scripts/gtags.vim'
+repo = 'vim-scripts/gtags.vim'
 
 [[plugins]] # explicit indent
-repo='Yggdroot/indentLine'
+repo = 'Yggdroot/indentLine'
 
 [[plugins]] # complementer
-repo='Shougo/neocomplete.vim'
+repo = 'Shougo/neocomplete.vim'
 
 [[plugins]] # snippet
-repo='Shougo/neosnippet.vim'
+repo = 'Shougo/neosnippet.vim'
 
 [[plugins]] # default snippet
-repo='Shougo/neosnippet-snippets'
+repo = 'Shougo/neosnippet-snippets'
 
 [[plugins]] # sequencial command executer
 repo = 'kana/vim-submode'
 
 [[plugins]] # commenter
-repo='scrooloose/nerdcommenter'
+repo = 'scrooloose/nerdcommenter'
 
 [[plugins]] # git wrapper
 repo = 'tpope/vim-fugitive'
