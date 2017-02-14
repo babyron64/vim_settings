@@ -2,6 +2,7 @@
 
 ## installation
 Execute install.sh and .vimrc file will be added to $HOME/.
+
 NOTE: Make sure your ~/.vim folder and .vimrc file will be replaced. To avoid this, you have to install manually.
 
 ## requirement
