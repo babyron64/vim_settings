@@ -1,17 +1,17 @@
 "
-" t:indentline
+" ::indentline
 "
 " apply indentline to tabs  
 set list listchars=tab:\|\
 
 "
-" t:NERDTree
+" ::NERDTree
 "
 " always show hidden files 
 let NERDTreeShowHidden=1
 
 "
-" t:neocomplete
+" ::neocomplete
 "
 " Disable AutoComplPop.
 let g:acp_enableAtStartup=0
@@ -32,7 +32,7 @@ let g:neocomplete#keyword_patterns['default']='\h\w*'
 
 
 "
-" t:neosnippets
+" ::neosnippets
 "
 " For conceal markers.
 if has('conceal')
@@ -42,13 +42,13 @@ endif
 " g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
 "
-" t:vim-submode
+" ::vim-submode
 "
 let g:submode_timeout=1
 let g:submode_timeoutlen=800
 
 "
-" t:NERDCommenter
+" ::NERDCommenter
 "
 " Add spaces after comment delimiters by default.
 let g:NERDSpaceDelims=1
