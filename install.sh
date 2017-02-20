@@ -5,10 +5,10 @@ if [ -e $HOME/.vimrc ]
 then
 	rm $HOME/.vimrc
 fi
-if [ -e $HOME/.vim ] 
-then
-	rm -rf $HOME/.vim
-fi
+#if [ -e $HOME/.vim ] 
+#then
+#	rm -rf $HOME/.vim
+#fi
 cp ./.vimrc $HOME/.vimrc
 cd ../
 cp -r $ins_dir $HOME/.vim
