@@ -9,7 +9,7 @@ fi
 #then
 #	rm -rf $HOME/.vim
 #fi
-cp ./.vimrc $HOME/.vimrc
+ln ./.vimrc $HOME/.vimrc
 cd ../
 cp -r $ins_dir $HOME/.vim
 mkdir -p $HOME/.vim/dein/repos/github.com/Shougo/dein.vim
