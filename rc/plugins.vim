@@ -8,6 +8,7 @@ set list listchars=tab:\|\
 " ::NERDTree
 "
 " always show hidden files 
+" au VIMENTER * NERDTree
 let NERDTreeShowHidden=1
 
 "
