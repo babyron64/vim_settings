@@ -9,6 +9,10 @@ noremap sw<CR> :<C-u>w<CR>
 noremap sqf<CR> :<C-u>q!<CR>
 noremap swq<CR> :<C-u>wq<CR>
 noremap sz<CR> <C-z>
+noremap sr<CR> :<C-u>e<CR>
+noremap srf<CR> :<C-u>e!<CR>
+noremap sbq<CR> :<C-u>bdelete<CR>
+noremap sbqf<CR> :<C-u>bdelete!<CR>
 " cursor behavior
 noremap j gj
 noremap k gk
@@ -27,10 +31,10 @@ call submode#map('panemove', 'n', '', 'h', '<C-w>h')
 call submode#map('panemove', 'n', '', 'j', '<C-w>j')
 call submode#map('panemove', 'n', '', 'k', '<C-w>k')
 call submode#map('panemove', 'n', '', 'l', '<C-w>l')
-call submode#enter_with('paneresize', 'n', '', 'Pl', '<C-w>>')
-call submode#enter_with('paneresize', 'n', '', 'Ph', '<C-w><')
-call submode#enter_with('paneresize', 'n', '', 'Pj', '<C-w>+')
-call submode#enter_with('paneresize', 'n', '', 'Pk', '<C-w>-')
+call submode#enter_with('paneresize', 'n', '', '<S-p>l', '<C-w>>')
+call submode#enter_with('paneresize', 'n', '', '<S-p>h', '<C-w><')
+call submode#enter_with('paneresize', 'n', '', '<S-p>j', '<C-w>+')
+call submode#enter_with('paneresize', 'n', '', '<S-p>k', '<C-w>-')
 call submode#map('paneresize', 'n', '', 'l', '<C-w>>')
 call submode#map('paneresize', 'n', '', 'h', '<C-w><')
 call submode#map('paneresize', 'n', '', 'j', '<C-w>+')
@@ -48,10 +52,8 @@ cnoremap bf buffers
 nnoremap <C-b>b :<C-u>b#<CR>
 call submode#enter_with('bufmove', 'n', '', '<C-b>n', ':<C-u>bn<CR>')
 call submode#enter_with('bufmove', 'n', '', '<C-b>p', ':<C-u>bp<CR>')
-call submode#map('tabmove', 'n', '', 'n', ':<C-u>bn<CR>')
-call submode#map('tabmove', 'n', '', 'p', ':<C-u>bp<CR>')
-noremap sbq<CR> :<C-u>bdelete<CR>
-noremap sbqf<CR> :<C-u>bdelete!<CR>
+call submode#map('bufmove', 'n', '', 'n', ':<C-u>bn<CR>')
+call submode#map('bufmove', 'n', '', 'p', ':<C-u>bp<CR>')
 " inc/dec setting
 call submode#enter_with('incdec', 'n', '', '<C-a>', '<C-a>')
 call submode#enter_with('incdec', 'n', '', '<C-x>', '<C-x>')
