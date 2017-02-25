@@ -13,6 +13,12 @@ noremap sr<CR> :<C-u>e<CR>
 noremap srf<CR> :<C-u>e!<CR>
 noremap sbq<CR> :<C-u>bdelete<CR>
 noremap sbqf<CR> :<C-u>bdelete!<CR>
+noremap spq<CR> :<C-u>close<CR>
+noremap spqf<CR> :<C-u>close!<CR>
+noremap spoq<CR> :<C-u>only<CR>
+noremap spoqf<CR> :<C-u>only!<CR>
+" reload vimrc
+cnoremap rrc :<C-u>source ~/.vimrc
 " cursor behavior
 noremap j gj
 noremap k gk
@@ -21,8 +27,8 @@ noremap <S-l> $
 nnoremap <Space> i<Space><ESC>
 nnoremap <CR> $a<CR><ESC>
 " pane setting
-nnoremap <C-p>s :<C-u>sp<CR>
-nnoremap <C-p>v :<C-u>vsp<CR>
+nnoremap <C-p>s :<C-u>new<CR>
+nnoremap <C-p>v :<C-u>vnew<CR>
 call submode#enter_with('panemove', 'n', '', '<C-p>h', '<C-w>h')
 call submode#enter_with('panemove', 'n', '', '<C-p>j', '<C-w>j')
 call submode#enter_with('panemove', 'n', '', '<C-p>k', '<C-w>k')
