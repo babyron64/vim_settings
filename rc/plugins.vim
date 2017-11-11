@@ -2,7 +2,7 @@
 " ::indentline
 "
 " apply indentline to tabs  
-set list listchars=tab:\|\
+" set list listchars=tab:\|\
 
 "
 " ::NERDTree
@@ -45,8 +45,9 @@ endif
 "
 " ::vim-submode
 "
-let g:submode_timeout=1
+let g:submode_timeout=0
 let g:submode_timeoutlen=800
+let g:submode_keyseqs_to_leave=['s']
 
 "
 " ::NERDCommenter
@@ -60,8 +61,17 @@ let g:NERDDefaultAlign = 'left'
 " Set a language to use its alternate delimiters by default
 " let g:NERDAltDelims_java = 1
 " Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+let g:NERDCustomDelimiters = { 
+    \ 'c': { 'left': '/**','right': '*/' },
+    \ 'swi':{'left': '%', 'right': ''}
+\ }
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+
+" ::markdown
+autocmd BufRead,BufNewFile *.mkd set filetype=markdown
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+let g:vim_markdown_folding_disabled=1
+let g:previm_enable_realtime=1
