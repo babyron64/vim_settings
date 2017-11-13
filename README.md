@@ -20,7 +20,7 @@ set backup
 set backupdir=~/.vim/tmpfiles/backup
 set undofile
 set undodir=~/.vim/tmpfiles/undo
-set viminfo+=~/.vim/tmpfiles_viminfo
+set viminfo+=n~/.vim/tmpfiles_viminfo
 ```
 
 ##### After
@@ -30,7 +30,7 @@ set backup
 set backupdir=~/_vim/tmpfiles/backup
 set undofile
 set undodir=~/_vim/tmpfiles/undo
-set viminfo+=~/_vim/tmpfiles_viminfo
+set viminfo+=n~/_vim/tmpfiles_viminfo
 ```
 
 #### at `rc/dein_setting.vim`
