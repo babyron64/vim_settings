@@ -13,7 +13,7 @@ set shiftwidth=4
 
 " set foldmethod=syntax
 set foldmethod=indent
-set foldlevel=1
+set foldlevel=0
 set foldnestmax=2
 highlight Folded ctermbg=black
 highlight Folded ctermfg=blue
