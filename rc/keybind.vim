@@ -19,8 +19,10 @@ cnoremap rrc :<C-u>source ~/.vimrc
 " cursor behavior
 noremap j gj
 noremap k gk
-noremap so <C-o>
-noremap si <C-i>
+call submode#enter_with('jump_cursor', 'n', '', 'so', '<C-o>')
+call submode#enter_with('jump_cursor', 'n', '', 'si', '<C-i>')
+call submode#map('jump_cursor', 'n', '', 'o', '<C-o>')
+call submode#map('jump_cursor', 'n', '', 'i', '<C-i>')
 noremap <S-j> <S-g>
 noremap <S-k> gg
 noremap <S-h> ^
@@ -50,6 +52,7 @@ nnoremap skv :<C-u>rightbelow cope<CR>
 " nnoremap ska :<C-u>vertical leftabove cope<CR>
 " nnoremap skr :<C-u>leftabove cope<CR>
 nnoremap skc :<C-u>cc<Space>       
+nnoremap sko :<C-u>copen<CR>      
 nnoremap skq :<C-u>cclose<CR>      
 call submode#enter_with('gtags_updown', 'n', '', 'skn', ':<C-u>cn<CR>')
 call submode#enter_with('gtags_updown', 'n', '', 'skp', ':<C-u>cp<CR>')
